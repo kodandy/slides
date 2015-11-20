@@ -4,6 +4,8 @@
 
 ### @besutome
 
+### #meteorjs_jp
+
 ---
 
 ###[fit] [Meteor Kitchen](http://www.meteorkitchen.com/)
