@@ -8,7 +8,7 @@
 
 ###[fit] [Meteor Kitchen](http://www.meteorkitchen.com/)
 
-![fit](imgs/meteor_kitchen.png)
+![fit](meteor_kitchen.png)
 
 ---
 
@@ -248,4 +248,4 @@ $ cd myapp && meteor
 
 ###[fit] [Meteor Kitchen](http://www.meteorkitchen.com/)
 
-![fit](imgs/meteor_kitchen.png)
+![fit](meteor_kitchen.png)
