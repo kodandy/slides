@@ -1,6 +1,7 @@
 #[fit] MeteorでReact使う意味あんの？
 
 ### @besutome
+### #meteorjs_jp
 
 ---
 
