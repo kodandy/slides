@@ -121,7 +121,7 @@
 
 ---
 
-##[fit] 俺「Firebaseあるよ」
+##[fit] ぼく「Firebaseあるよ」
 
 ---
 
