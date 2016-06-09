@@ -6,7 +6,8 @@
 ---
 
 サードパーティ使わなきゃいけない
-
+-> react-native-router-fluxは非推奨
+https://github.com/aksonov/react-native-redux-router
 ---
 
 導入の判断に時間がかかる
@@ -19,10 +20,13 @@ reduxはちゃんと設計した方がいい
 
 ---
 
-
-
+APIやアーキテクチャアーキテクチャからきちんと設計する
 
 ---
 
 気をつければ意外と同じコードで
 android & ios いける
+
+---
+
+まとめ
