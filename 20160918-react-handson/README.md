@@ -263,6 +263,65 @@ class Pizza extends Component{
 
 ---
 
+## bind
+
+class内でメソッドを定義する場合、`this`がバインドされません  
+メソッド内で`this`を利用したい場合は`bind`を利用してください
+
+```js
+ class Text extends Component {
+   constructor(props) {
+     super(props);
+     
+     this.state = {
+       count: 0
+     }
+   }
+   
+   addCount() {
+     this.setState({
+       count: this.state.count + 1
+     });
+   }
+
+  render() {
+     <button onClick={this.addCount}>
+       button
+     </button>
+     ...
+  }
+}
+```
+
+バインドの方法はいくつかありますが、一般的には以下の2つです
+
+```js
+   render() {
+     <button onClick={this.addCount.bind(this)}>
+       button
+     </button>
+     ...
+   }
+```
+
+```js
+   constructor(props) {
+     super(props);
+     
+     this.addCount = this.addCount.bind(this);
+   }
+   
+   render() {
+     <button onClick={this.addCount}>
+       button
+     </button>
+     ...
+   }
+```
+
+
+---
+
 ## Additional
 
 + ES6(arrow function, const/let, class)
