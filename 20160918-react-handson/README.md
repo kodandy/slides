@@ -336,3 +336,10 @@ class内でメソッドを定義する場合、`this`がバインドされませ
   + react-test-renderer
 + React StoryBook
 + React Developper Tools
+
+---
+
+## 参考
+
++ ES6版React.jsチュートリアル http://qiita.com/nownabe/items/2d8b92d95186c3941de0
+  + 最初のコンポーネントを作るの章からで大丈夫です
