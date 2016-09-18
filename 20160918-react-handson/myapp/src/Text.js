@@ -14,12 +14,16 @@ import React, { Component } from 'react';
      }, 1000);
    }
 
+   static defaultProps = {
+     text: 'hoge'
+   };
+
   render() {
-    const text = this.state.showText? this.props.text : '';
+    // const text = this.state.showText? this.props.text : '';
     return (
       <div>
         <span style={{color: "red"}}>
-          {text}
+          {this.props.text}
         </span>
       </div>
     );

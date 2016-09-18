@@ -163,7 +163,7 @@ propsを渡す際はダブルクオートで囲むと、文字列型になりま
 Propsは一度コンポーネントが作成されると変更されませんが、
 Stateはコンポーネントの中で変更される値を保持するために使います
 
-`src/App.js`
+`src/Text.js`
 
 ```js
  class Text extends Component {
@@ -255,7 +255,7 @@ Class Pizza extends Component {
 
 ```js
 class Pizza extends Component{
-  static propTypes = {    cheeze: 'チェダーチーズ',
+  static defaultProps = {    cheeze: 'チェダーチーズ',
     meat : 10,
     onion {redOnion, Onion},  };
 }
