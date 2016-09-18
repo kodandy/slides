@@ -144,9 +144,9 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Welcome to React</h2>
         </div>
-        <p className="App-intro">
+        <div className="App-intro">
           <Text text="ハンズオン" />
-        </p>
+        </div>
       </div>
     );
   }
@@ -243,7 +243,7 @@ Propsの型が定義されたものと違ったり、足りないPropsがある�
 
 ```js
 Class Pizza extends Component {
-  static PropTypes = {
+  static propTypes = {
     cheeze: React.PropTypes.string.isRequired,
     meat: React.PropTypes.number.isRequired,
     onion: React.PropTypes.object, 
@@ -265,7 +265,7 @@ class Pizza extends Component{
 
 ## Additional
 
-+ ES6
++ ES6(arrow function, const/let, class)
 + React.PureComponnent
 + High Order Component
   https://github.com/acdlite/recompose
