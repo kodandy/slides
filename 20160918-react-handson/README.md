@@ -261,3 +261,19 @@ class Pizza extends Component{
 }
 ```
 
+---
+
+## Additional
+
++ ES6
++ React.PureComponnent
++ High Order Component
+  https://github.com/acdlite/recompose
++ Function as Child Component
+  https://medium.com/merrickchristensen/function-as-child-components-5f3920a9ace9#.d8hktfyji
++ Test
+  + ShallowRender
+  + arbnb/enzyme
+  + react-test-renderer
++ React StoryBook
++ React Developper Tools
