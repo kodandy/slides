@@ -69,7 +69,7 @@ https://github.com/besutome/slides/tree/master/20160918-react-handson
 
 `index.ios.js`
 
-```index.ios.js
+```js
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -90,7 +90,7 @@ const styles = StyleSheet.create({
 });
 ```
 
-```index.ios.js
+```js
 <View style={styles.container}>
 
 or
