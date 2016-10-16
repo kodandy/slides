@@ -215,7 +215,7 @@ import { ListView } from 'react-native';
 class AwesomeProject extends Component {
   constructor(props) {
     super(props);
-    const ds = newListView.DataSource ({
+    const ds = new ListView.DataSource ({
       rowHasChanged: (r1, r2) => r1 !== r2
     });
 
@@ -231,11 +231,9 @@ class AwesomeProject extends Component {
 
   render() {
     const renderRow = (rowData) =>
-      return (
         <View style={{height: 400 ,backgroundColor: rowData.bgColor}} >
           <Text style={{fontSize: 100}}>{rowData.text}</Text>
         </View>
-      );
 
     return(
       <ListView
