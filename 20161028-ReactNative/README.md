@@ -1,4 +1,5 @@
 ## React Native for ...
+![](./halloween.jpg)
 
 ---
 
@@ -27,6 +28,7 @@ http://sappet.com
 ---
 
 ## React Native for ...
+![](./halloween.jpg)
 
 ---
 
@@ -180,3 +182,27 @@ render() {
 
 # デザイナー
 # 募集中！
+![](./halloween.jpg)
+
+---
+
+# 告知
+
+---
+
+## Facebookグループあります！
+
+## React Native Meetup
+https://www.facebook.com/groups/1722053778010342/
+
+---
+
+### 勉強会の運営メンバー募集します！
+
+### 多言語対応も必要そう
+
+---
+
+### React&React Native入門者の会
+
+http://react-native-meetup.connpass.com/event/39685/?utm_campaign=event_participate_to_follower&utm_medium=twitter&utm_source=notifications
