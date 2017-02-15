@@ -58,8 +58,9 @@ React Native Meetupとか主催してます。
 
 ### State
 
-コンポーネントがもつ値には `Props`のほかに `State` があります
-`Props` は一度コンポーネントが作成されると変更されませんが、 `State` はコンポーネントの中で変更される値を保持するために使います
+コンポーネントがもつ値には `Props`のほかに `State` があります  
+`Props` は一度コンポーネントが作成されると変更されませんが、   
+`State` はコンポーネントの中で変更される値を保持するために使います
 
 ### Style
 
@@ -156,18 +157,18 @@ class FlexDimensionsBasics extends Component {
 AppRegistry.registerComponent('AwesomeProject', () => FlexDimensionsBasics);
 ```
 
-> コンポーネントの親のサイズが0より大きい場合、コンポーネントは使用可能な領域を塗りつぶすためにのみ展開できます。
+> コンポーネントの親のサイズが0より大きい場合、コンポーネントは使用可能な領域を塗りつぶすためにのみ展開できます。  
 > 親が固定幅と高さまたはフレックスのいずれも持たない場合、親の寸法は0になり、フレックスの子は表示されません。
 
-`<View style={{flex: 1}}>` をコメントアウトしているものに変更してみてください。
+`<View style={{flex: 1}}>` をコメントアウトしているものに変更してみてください。  
 挙動がよくわかると思います。
 
----
+```
 **cssとの違い**
 
 cssとの違いはいくつかありますが、重要なのは `z-index` を指定できないことです。  
 重ね順を変更するにはコンポーネントの順序を変えることで対応します。
----
+```
 
 ### Layout with Flexboxレイアウト
 
@@ -263,7 +264,7 @@ AppRegistry.registerComponent('AwesomeProject', () => AlignItemsBasics);
 
 ### Handling Text Input
 
-`TextInput` はーザーにテキストを入力してもらう際に利用します。
+`TextInput` はーザーにテキストを入力してもらう際に利用します。  
 サンプルではペースで区切った単語ごとに🍕が出力されます。
 
 ```js
@@ -295,7 +296,7 @@ class PizzaTranslator extends Component {
 AppRegistry.registerComponent('PizzaTranslator', () => PizzaTranslator);
 ```
 
----
+```
 **ScrollView / ListView**
 
 スクロール領域を指定したい場合は、 `<ScrollView>` もしくは `<ListView>` で指定する必要があります。  
@@ -310,7 +311,7 @@ AppRegistry.registerComponent('PizzaTranslator', () => PizzaTranslator);
 
 `ScrollView` の内容は端末内であらかじめ全てレンダリングされます。  
 `ListView` はスクロールされた時に画面に入った要素をその都度レンダリングします。
----
+```
 
 ### Using a ScrollView
 
@@ -342,7 +343,7 @@ class IScrolledDownAndWhatHappenedNextShockedMe extends Component {
           <Image source={require('./img/favicon.png')} />
           <Image source={require('./img/favicon.png')} />
           <Image source={require('./img/favicon.png')} />
-          <Text style={{fontSize:96}}>What's the best</Text>
+          <Text style={{fontSize:96}}>What is the best</Text>
           <Image source={require('./img/favicon.png')} />
           <Image source={require('./img/favicon.png')} />
           <Image source={require('./img/favicon.png')} />
@@ -402,14 +403,16 @@ AppRegistry.registerComponent('ListViewBasics', () => ListViewBasics);
 `ListView` は少し複雑です。
 
 まず `new ListView.DataSource()` から、初期化済みのDataSourceを用意しています。  
-`rowHasChanged` の値は各データの同一性を検証する関数で、 `r1` と `r2` というデータを与えた時、二つのデータが違うものかどうかを返す関数です。  
+`rowHasChanged` の値は各データの同一性を検証する関数で、  
+ `r1` と `r2` というデータを与えた時、二つのデータが違うものかどうかを返す関数です。  
 上記の例では単純に `r1` と `r2` を比較しているだけです。
 
 そしてDataSourceに値を入れ、コンポーネントの `dataSource` Stateに設定します。  
 `cloneWithRows` は自身のDataSourceを複製して、引数で与えられた値を追加したものを返します。  
 そのため、 `dataSource` Stateには値が入った状態のDataSourceが登録されます。
 
-表示の際には、`<ListView>` のpropsに表示させたいデータを指定する `dataSource` とデータの表示方法を指定する `renderRow` を設定します。  
+表示の際には、`<ListView>` のpropsに表示させたいデータを指定する `dataSource` と  
+データの表示方法を指定する `renderRow` を設定します。  
 
 `dataSource` には `DataSource` Stateを与えています。  
 `renderRow` にはデータを表示するためのコンポーネントを返す関数を与えます。
@@ -458,7 +461,7 @@ AppRegistry.registerComponent('AwesomeProject', () => AwesomeProject);
 `<Navigator>` はPropsとして `initialRoute` と `renderScene` を受けとり、  
 `renderScene` には `(route, navigator)` を引数に、画面を表示するためのコンポーネントを返す関数を設定します。  
 
-この関数は画面遷移のたびに呼び出されるため、与えられた `route` の値に応じて画面作成することで、ページ遷移ができます。  
+この関数は画面遷移のたびに呼び出されるため、与えられた `route` の値に応じて画面作成することでページ遷移ができます。  
 `initialRoute` は最初に作られる画面の  `route` になります。
 
 ページ遷移はもう一つの引数 `navigator` のAPIを呼ぶことで行います。  
