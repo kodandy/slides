@@ -296,22 +296,20 @@ class PizzaTranslator extends Component {
 AppRegistry.registerComponent('PizzaTranslator', () => PizzaTranslator);
 ```
 
-```
-**ScrollView / ListView**
+> **ScrollView / ListView**
 
-スクロール領域を指定したい場合は、 `<ScrollView>` もしくは `<ListView>` で指定する必要があります。  
-それぞれの違いは以下です。
+> スクロール領域を指定したい場合は、 `<ScrollView>` もしくは `<ListView>` で指定する必要があります。  
+> それぞれの違いは以下です。
 
-+ `ScrollView`
-  + 要素が小さくて大きさが限られたものを表示する
-  + 要素は基本的に不変
-+ `ListView`
-  + 要素が長いリスト
-  + 要素が動的に変更される
+> + `ScrollView`
+>  + 要素が小さくて大きさが限られたものを表示する
+>  + 要素は基本的に不変
+> + `ListView`
+>  + 要素が長いリスト
+>  + 要素が動的に変更される
 
-`ScrollView` の内容は端末内であらかじめ全てレンダリングされます。  
-`ListView` はスクロールされた時に画面に入った要素をその都度レンダリングします。
-```
+> `ScrollView` の内容は端末内であらかじめ全てレンダリングされます。  
+> `ListView` はスクロールされた時に画面に入った要素をその都度レンダリングします。
 
 ### Using a ScrollView
 
