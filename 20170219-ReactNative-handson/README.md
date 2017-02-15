@@ -231,7 +231,7 @@ AppRegistry.registerComponent('AwesomeProject', () => JustifyContentBasics);
 
 #### Align Items
 
-`alignItems` は素の縦位置を指定します。
+`alignItems` は要素の縦位置を指定します。
 
 ```js
 import React, { Component } from 'react';
