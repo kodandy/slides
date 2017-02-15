@@ -21,8 +21,6 @@ React Native Meetupとか主催してます。
 
 ## 概要
 
-### 概要
-
 + Reactを用いてiOSやAndroidのネイティブアプリを構築できるフレームワーク
 + JavaScriptからネイティブのAPIが呼ばれる
 + 一度覚えればどのプラットフォーム向けにも書けるようになる
@@ -51,6 +49,11 @@ React Native Meetupとか主催してます。
 ---
 
 ## Tutorial
+
+このハンズオンでは公式チュートリアルを利用します。  
+ブラウザ上でコードを変更すれば結果を見ることができるので、試しながら進めていってください。
+
+https://facebook.github.io/react-native/docs/tutorial.html
 
 ### Props
 
