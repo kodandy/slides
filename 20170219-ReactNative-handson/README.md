@@ -163,12 +163,10 @@ AppRegistry.registerComponent('AwesomeProject', () => FlexDimensionsBasics);
 `<View style={{flex: 1}}>` をコメントアウトしているものに変更してみてください。  
 挙動がよくわかると思います。
 
-```
-**cssとの違い**
+> **cssとの違い**
 
-cssとの違いはいくつかありますが、重要なのは `z-index` を指定できないことです。  
-重ね順を変更するにはコンポーネントの順序を変えることで対応します。
-```
+> cssとの違いはいくつかありますが、重要なのは `z-index` を指定できないことです。  
+> 重ね順を変更するにはコンポーネントの順序を変えることで対応します。
 
 ### Layout with Flexboxレイアウト
 
