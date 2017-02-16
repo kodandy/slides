@@ -145,7 +145,7 @@ class FlexDimensionsBasics extends Component {
       // The parent will not have dimensions, so the children can't expand.
       // What if you add `height: 300` instead of `flex: 1`?
       <View style={{flex: 1}}>
-      {/* 
+      {/*
         <View>
         <View style={{height: 300}}>
       */}
@@ -265,7 +265,7 @@ AppRegistry.registerComponent('AwesomeProject', () => AlignItemsBasics);
 
 ### Handling Text Input
 
-`TextInput` はーザーにテキストを入力してもらう際に利用します。  
+`TextInput` はユーザーにテキストを入力してもらう際に利用します。  
 サンプルではペースで区切った単語ごとに🍕が出力されます。
 
 ```js
