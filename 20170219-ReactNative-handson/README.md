@@ -13,7 +13,10 @@ React Native Meetupとか主催してます。
 + `brew install node@6`(サンプルはv6.9.5)
 + `brew install watchman`
 + `npm i -g react-native-cli`
-+ `react-native init test && cd test`
+
+## プロジェクト作成&実行
++ `react-native init test
++ `cd test`
 + `react-native run-ios`
 
 ※ 上記で動かない場合は`npm start`後、Xcodeから`test/ios/test.xcodeproj`をビルドしてください
@@ -62,7 +65,7 @@ https://facebook.github.io/react-native/docs/tutorial.html
 ### State
 
 コンポーネントがもつ値には `Props`のほかに `State` があります  
-`Props` は一度コンポーネントが作成されると変更されませんが、   
+`Props` は親コンポーネントから渡されるものですが、、   
 `State` はコンポーネントの中で変更される値を保持するために使います
 
 ### Style
