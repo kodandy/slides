@@ -537,6 +537,14 @@ React Native向けのライブラリはnpmで提供されています。
 React.parts  
 https://react.parts/native
 
+## そしてReact Nativeへ...
+
++ 実機・シミュレータで動かしてみる
++ Networking (Tutorial)
+  + https://facebook.github.io/react-native/docs/network.html
++ More Resources (Tutorial)
+  + https://facebook.github.io/react-native/docs/more-resources.html#content
+
 ---
 
 ## 参考
