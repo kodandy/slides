@@ -13,7 +13,10 @@ React Native Meetupとか主催してます。
 + `brew install node@6`(サンプルはv6.9.5)
 + `brew install watchman`
 + `npm i -g react-native-cli`
-+ `react-native init test && cd test`
+
+## プロジェクト作成&実行
++ `react-native init test
++ `cd test`
 + `react-native run-ios`
 
 ※ 上記で動かない場合は`npm start`後、Xcodeから`test/ios/test.xcodeproj`をビルドしてください
@@ -33,8 +36,7 @@ React Native Meetupとか主催してます。
 + CSSのサブセットがあるため、CSSでスタイリングできる
 
 ### デメリット
-+ 複雑なUIになると、ネイティブコードを書かざるを得なくなる
-
++ 複雑なUIになると、ネイティブコードを書く必要がある
 
 ## デバッグ
 `⌘+D`でメニュー画面表示(iosの場合)
@@ -62,7 +64,7 @@ https://facebook.github.io/react-native/docs/tutorial.html
 ### State
 
 コンポーネントがもつ値には `Props`のほかに `State` があります  
-`Props` は一度コンポーネントが作成されると変更されませんが、   
+`Props` は親コンポーネントから渡されるものですが、、   
 `State` はコンポーネントの中で変更される値を保持するために使います
 
 ### Style
@@ -145,7 +147,7 @@ class FlexDimensionsBasics extends Component {
       // The parent will not have dimensions, so the children can't expand.
       // What if you add `height: 300` instead of `flex: 1`?
       <View style={{flex: 1}}>
-      {/* 
+      {/*
         <View>
         <View style={{height: 300}}>
       */}
@@ -265,7 +267,7 @@ AppRegistry.registerComponent('AwesomeProject', () => AlignItemsBasics);
 
 ### Handling Text Input
 
-`TextInput` はーザーにテキストを入力してもらう際に利用します。  
+`TextInput` はユーザーにテキストを入力してもらう際に利用します。  
 サンプルではペースで区切った単語ごとに🍕が出力されます。
 
 ```js
@@ -533,6 +535,15 @@ React Native向けのライブラリはnpmで提供されています。
 
 React.parts  
 https://react.parts/native
+
+## そしてReact Nativeへ...
+
++ 実機・シミュレータで動かしてみる
++ Networking (Tutorial)
+  + https://facebook.github.io/react-native/docs/network.html
++ More Resources (Tutorial)
+  + https://facebook.github.io/react-native/docs/more-resources.html#content
++ ライブラリを使ってみる
 
 ---
 
