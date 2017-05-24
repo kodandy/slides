@@ -53,12 +53,12 @@ $ npm start
 
 # React概要
 
-ReactとはFaceBook発のライブラリです。
-Facebook, Instagram, Airbnbなどなど有名企業も取り入れています。
+ReactとはFaceBook発のライブラリです。  
+Facebook, Instagram, Airbnbなどなど有名企業も取り入れています。  
 （そしてこれらの企業のアプリはReact-Native製）
 
 
-後述するコンポーネントを作っていくことが目的になります。
+後述するコンポーネントを作っていくことが目的になります。  
 大きな特徴としては、コンポーネントとJSX、そして仮想DOMです。
 
 ## JSX
@@ -75,10 +75,10 @@ class Hello extends React.Component {
 }
 ```
 
-この一見HTMLっぽいものがありますが、これがJSXのシンタックスです。
+この一見HTMLっぽいものがありますが、これがJSXのシンタックスです。  
 HTMLタグをjsの中に書いていくのが特徴です。
 
-これによって、画面に表示させるものを直感的に書いていくことができます。
+これによって、画面に表示させるものを直感的に書いていくことができます。  
 少し特殊ですが、**必ずタグは閉じる**という大原則を守るだけです。
 
 ```js
@@ -130,32 +130,34 @@ ReactDOM.render(
 );
 ```
 
-となっており、このコードによって`src/App.js`が`src/index.js`の`<App />`の箇所に呼び出され、`public/index.html`の`id="root"`となっている箇所に出力されます。
-そして、この`<App />`が **Component** です
+となっており、このコードによって`src/App.js`が`src/index.js`の`<App />`の箇所に呼び出され、  
+`public/index.html`の`id="root"`となっている箇所に出力されます。  
+この`<App />`が **Component** となります。
 
 ### 仮想DOM
 
-効率よくレンダリングするための仕組みです。
-DOMを描画するのにはパワーがいるのですが、Reactでは画面の要素に変更があった時、差分を計算して差分のみを画面に描写してくれます。
+効率よくレンダリングするための仕組みです。  
+DOMを描画するのにはパワーがいるのですが、Reactでは画面の要素に変更があった時に  
+差分を計算して差分のみを画面に描写してくれます。  
 これによって高いパフォーマンスを得られます。
 
 
 ### 開発環境
 
-開発環境については、jsxを変換する仕組み、ES6を変換する仕組みなどなど、色々が必要なのですが、create-react-appを使うことによって全て構築される環境ではこれらの仕組みを持っています。
+開発環境についてはjsxを変換する仕組み、ES6を変換する仕組みなど色々が必要なのですが、
+`create-react-app` を使うことによってこれらの仕組みが自動的に構築されています。
 
 ---
 
 ## Props
 
-各コンポーネントにはパラメータを与えることができ、それを **Props** といいます。
+各コンポーネントにはパラメータを与えることができ、それを **Props** といいます。  
 新しいコンポーネントを作成します。
 
 
 `src/Text.js`を作成し、下記コードを書きます。
 
 `src/Text.js`
-
 ```js
 import React, { Component } from 'react';
 
@@ -171,7 +173,7 @@ class Text extends Component {
 
 export default Text;
 ```
-`src/App.js`を書き換えます
+`src/App.js`を書き換えます。
 
 `src/App.js`
 
@@ -200,7 +202,7 @@ class App extends Component {
 export default App;
 ```
 
-保存すればリロードしなくても変更点は反映されています。
+保存すればリロードしなくても変更点は反映されています。  
 画面にハンズオンと赤字で表示されていると思います。
 
 
@@ -221,7 +223,7 @@ import Text from './Text';
 </div>
 ```
 
-となっています。
+となっています。  
 これによってTextコンポーネントが画面に表示されるようになります。　　
 
 そして`src/Text.js`では、
@@ -235,8 +237,8 @@ import Text from './Text';
 </span>
 ・・・
 ```
-となっています。
-このように親から渡されたpropsはthis.propsで参照できます。
+となっています。  
+このように親から渡されたpropsはthis.propsで参照できます。  
 この場合はtextというpropsを参照したいのでthis.props.textとなります。
 
 ### 余談（ReactのStyleとか）
@@ -247,10 +249,10 @@ styleを使うことでスタイルを簡単に適用することができます
 <span style={{color: "red"}}>
 ```
 
-このようになっています。これはCSSの`color: red`と同じ意味合いになります。
-また、Reactでは {} で囲うことによってJavaScriptとして評価されるのでこれはオブジェクトを渡しているということになります。
+このようになっています。これはCSSの`color: red`と同じ意味合いになります。  
+また、Reactでは {} で囲うことによってJavaScriptとして評価されるので、これはオブジェクトを渡しているということになります。
 
-inlineStyleっぽいですが、オブジェクトを渡すという点と、
+inlineStyleチックですが、オブジェクトを渡すという点と、
 
 ```js
 <span style={{ backgroundColor: "blue" }}
@@ -264,14 +266,14 @@ inlineStyleっぽいですが、オブジェクトを渡すという点と、
 <div className="App-intro">
 ```
 
-と`class`ではなく`className`になっている点も注意してください。
+と`class`ではなく`className`になっている点も注意してください。  
 CSSに描くCSSはいつも通りで問題ありません。
 
 ---
 
 ## State
 
-コンポーネントがもつ値にはPropsのほかに **State** があります。
+コンポーネントがもつ値にはPropsのほかに **State** があります。  
 Propsは親から渡されるものですが、Stateはコンポーネントの中で変更される値を保持するために使います。
 
 
@@ -307,7 +309,7 @@ Propsは親から渡されるものですが、Stateはコンポーネントの�
 }
 ```
 
-このようにするとTextコンポーネントの文字が点滅します。
+このようにするとTextコンポーネントの文字が点滅します。  
 昔懐かしのホームページみたいですね。
 
 
@@ -325,9 +327,11 @@ this.state = {
 const text = this.state.showText? this.props.text : '';
 ```
 
-State更新には`this.setState()`を利用します。
-setStateが実行されると、このStateを利用している他のコンポーネントは再レンダリングされます。
-setStateの中身はオブジェクトにします。この時オブジェクトのプロパティ名には変更したいstateのプロパティ名、値には変更したい値を使います。
+State更新には`this.setState()`を利用します。  
+setStateが実行されると、このStateを利用している他のコンポーネントは再レンダリングされます。  
+
+setStateの中身はオブジェクトにします。  
+この時オブジェクトのプロパティ名には変更したいstateのプロパティ名、値には変更したい値を使います。
 
 ```js
 this.setState({
@@ -335,7 +339,7 @@ this.setState({
 });
 ```
 
-この場合は、１秒ごとに、this.state.showTextがtrueになったりfalseになり、その度再レンダリングされるという挙動になります。
+この場合は、1秒ごとに、this.state.showTextがtrueになったりfalseになり、その度再レンダリングされるという挙動になります。
 
 ### 余談（Reactの御法度）
 
@@ -364,16 +368,17 @@ renderメソッドの中でsetStateを使うと、
 render -> setState -> render -> setState -> render ->　・・・・
 ```
 
-と無限ループに陥ってしまいます。　　
-> 後述するcomponentWillUpdate（コンポーネントが更新される時に実行される）などsetStateと関係のあるメソッドでも毎回setStateされるようなコーディングをすると、無限ループに入ってしまいます。
+と無限ループに陥ってしまいます。　　  
+後述するcomponentWillUpdate（コンポーネントが更新される時に実行される）など、  
+setStateと関係のあるメソッドでも毎回setStateされるようなコーディングをすると、無限ループに入ってしまいます。
 
 
 ---
 
 ## Component Life Cycle
 
-特定の際にしたい処理などを記載するには、以下のメソッドを利用します
-http://qiita.com/kawachi/items/092bfc281f88e3a6e456 の図が参考になります
+特定の際にしたい処理などを記載するには、以下のメソッドを利用します。  
+http://qiita.com/kawachi/items/092bfc281f88e3a6e456 の図が参考になります。
 
 + `componentWillMount()`
   + コンポーネントがマウント(メモリにロード)される前に一度だけ呼ばれます
@@ -441,7 +446,7 @@ export default Button;
 
 という記述があります。
 
-これはイベントハンドラで`this`がバインドされないためです。
+これはイベントハンドラで`this`がバインドされないためです。  
 なので、イベントハンドラにclass内のメソッドを指定する場合は`bind`を利用してください。
 
 
@@ -474,9 +479,10 @@ export default Button;
 ------
 
 ## ここからは時間があれば
-## PropTypes
-コンポーネントにどういったPropsを渡したかを定義するのが **PropTypes** です。
-必須ではありませんが、開発時には記載すべき。
+### PropTypes
+
+コンポーネントにどういったPropsを渡したかを定義するのが **PropTypes** です。  
+必須ではありませんが、開発時には記載すべきです。
 
 Propsの型が定義されたものと違ったり、足りないPropsがある場合はWarningが表示されます。
 
@@ -509,12 +515,13 @@ class Pizza extends Component{
 }
 ```
 
-PropTypesの種類を知りたい方はこちら
+PropTypesの種類を知りたい方はこちら  
 [Typechecking With PropTypes - React](https://facebook.github.io/react/docs/typechecking-with-proptypes.html)
 
 ## 実践編
 ### Stateless Functions
-コンポーネントを実装していく際に、stateを利用しないコンポネントを作成することがあると思います。
+
+コンポーネントを実装していく際に、stateを利用しないコンポーネントを作成することがあると思います。
 
 例：
 ```js
