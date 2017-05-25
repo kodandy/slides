@@ -22,7 +22,6 @@ React Native Meetupとか主催してます。
 
 ## Node.jsのインストール
 
-### macの方
 ```sh
 $ brew update
 $ brew install node
