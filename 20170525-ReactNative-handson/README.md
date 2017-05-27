@@ -495,9 +495,9 @@ import PropTypes from 'prop-types';
 
 Class Pizza extends Component {
   static propTypes = {
-    cheese: React.PropTypes.string.isRequired,
-    meat: React.PropTypes.number.isRequired,
-    onion: React.PropTypes.object, 
+    cheese: PropTypes.string.isRequired,
+    meat: PropTypes.number.isRequired,
+    onion: PropTypes.object, 
   };
 }
 ```
