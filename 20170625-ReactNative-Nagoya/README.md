@@ -3,8 +3,7 @@
 # @besutome
 ![profile](./profile.png)
 
-### Freelance
-### Frontend developer
+### Freelance frontend developer
 
 Host an React Native Meetup.
 
