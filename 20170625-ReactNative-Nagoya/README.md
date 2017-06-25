@@ -38,7 +38,7 @@ $ cd AwesomeProject
 $ npm start
 ```
 
-Start a development server.
+Start a development server.  
 Using the Expo app, Scan the QR code.
 Edit this app, The application is live reloading.
 
@@ -92,7 +92,7 @@ $ exp publish
 
 ### Building standalone app
 
-Use to standalone builds.
+Use to standalone builds.  
 Deploying to Apple's App Store or Google's Play Store.
 
 https://docs.expo.io/versions/v18.0.0/guides/building-standalone-apps.html
@@ -108,7 +108,7 @@ https://github.com/react-community/create-react-native-app/blob/master/EJECTING.
 
 ### Permissions
 + `Expo.Permissions.getAsync(type)`
-  Access to the provided permission type.
+  + Access to the provided permission type.
 
 ```js
 async function alertIfRemoteNotificationsDisabledAsync() {
