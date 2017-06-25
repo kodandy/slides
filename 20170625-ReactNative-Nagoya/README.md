@@ -1,14 +1,7 @@
-+ 時間は20分
-+ 可能ならexpo使ってスマホからgithub表示
-+ まとめ
-  + 今から新規で実装するならexpo使ってもいいんじゃない？
-  + リスク回避より、問題になったら作り直す方がコスト低い
-+ カメラやスマホの情報へのアクセス方法
-
 # React Native into Expo.
 
 # @besutome
-![right](./profile.png)
+![profile](./profile.png)
 
 ### Freelance
 ### Frontend developer
