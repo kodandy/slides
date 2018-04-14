@@ -54,6 +54,9 @@ ExpoアプリからQRコードをスキャンすると実機で、`i`を押す�
 どうしてもうまくいかない場合は、公式上でもエミュレータがあるのでそちらで  
 https://facebook.github.io/react-native/docs/tutorial.html
 
+Expo Snackでもいいです  
+https://snack.expo.io/
+
 # React 概要
 
 - FaceBook発のJSライブラリ
