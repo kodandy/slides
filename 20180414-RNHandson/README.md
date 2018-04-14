@@ -278,7 +278,7 @@ export default class App extends React.Component {
         <Greeting name='Jaina' />
         <Greeting name='Valeera' />
         <Banana />
-        <Blink />
+        <Blink text='Look at me look at me look at me' />
       </View>
     );
   }
